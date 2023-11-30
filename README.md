@@ -1,4 +1,4 @@
-# Smart Museum Tour Using Linked Data Generation
+# Semantic Enrichment of Museum Tours with Linked Data 
 
 
 <p align="center">
@@ -7,7 +7,7 @@
 </p>
 
 ## Overview
-This document presents the Smart Museum Tour project, an initiative leveraging Linked Data and Semantic Web technologies to enhance museum tours. The project involves mapping complex database data to Linked Data through RDF mapping and OWL ontologies, using datasets from the Smithsonian American Art Museum and Museum Of Modern Art.
+This document presents the Semantic Enrichment of Museum Tours with Linked Data project, an initiative leveraging Linked Data and Semantic Web technologies to enhance museum tours. The project involves mapping complex database data to Linked Data through RDF mapping and OWL ontologies, using datasets from the Carnegie Museum of Art and Museum of Modern Art.
 
 ## Key Features
 - **Linked Data Utilization**: Incorporating Linked Open Data (LOD) for improved data structure and accessibility.
@@ -23,7 +23,7 @@ The project addresses the challenge of accessing reliable and consistent data in
 
 ## Approach and High-Level System Design
 - The system comprises front-end and back-end components, with the front-end developed using React and the back-end using FastAPI frameworks in Python.
-- SPARQL queries are executed on an Apache Jena Fuseki server, providing visitors with detailed information about artworks and related pieces in other museums.
+- SPARQL queries are executed on an Apache Jena Fuseki server from AWS EC2 instance, providing visitors with detailed information about artworks and related pieces in other museums.
 
 ## Ontology Design and Visualization
 - The project's ontology includes graphical representations of relationships between classes and properties, aiding in understanding the data's structure.
@@ -32,7 +32,7 @@ The project addresses the challenge of accessing reliable and consistent data in
 - Data from multiple sources were pre-processed to create uniform datasets, addressing the challenge of merging datasets with different properties.
 
 ## Implementation
-- The implementation involved data cleaning, preprocessing, ontology creation, and setting up a Fuseki server for SPARQL querying.
+- The implementation involved data cleaning, preprocessing, ontology creation, and setting up a Fuseki server and hosting in AWS EC2 for SPARQL querying.
 - The system integrates front-end and back-end components for seamless user interaction.
 
 ## SPARQL Querying
@@ -50,5 +50,5 @@ The project addresses the challenge of accessing reliable and consistent data in
 - Scaling the application to cater to a larger user base.
 
 ## Conclusion
-The Smart Museum Tour project effectively uses digital technology and Semantic Web tools to enhance the museum experience by providing detailed, linked information about artworks.
->>>>>>> ae2ad25 (Added backend logic to the code)
+The Semantic Enrichment of Museum Tours with Linked Data project effectively uses digital technology and Semantic Web tools to enhance the museum experience by providing detailed, linked information about artworks.
+
