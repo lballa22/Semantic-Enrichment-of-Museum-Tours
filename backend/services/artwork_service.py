@@ -24,7 +24,7 @@ def build_sparql_query(title: Optional[str], artist_name: Optional[str], classif
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    PREFIX umt: <http://www.semanticweb.org/nvsp/ontologies/2023/11/semantic-museum.owl#>
+    PREFIX umt: <http://www.semanticweb.org/semantic-museum.owl#>
     SELECT 
         ?artifactId
         ?artifactImage
@@ -46,6 +46,7 @@ def build_sparql_query(title: Optional[str], artist_name: Optional[str], classif
         ?deathPlace
         ?nationality
         ?classificationName
+        ?role
     WHERE {{
         ?artifact rdf:type umt:Artifact;
         umt:hasArtifactDepth ?depth;
@@ -60,8 +61,8 @@ def build_sparql_query(title: Optional[str], artist_name: Optional[str], classif
         umt:hasMedium ?medium;
         umt:hasProvenance ?provenance;
         umt:hasArtist ?artist;
-        umt:hasClassification ?classification.
-        # umt:hasRole ?role.
+        umt:hasClassification ?classification;
+        umt:hasRole ?role.
 
 
         ?artist rdf:type umt:Artist;
@@ -119,6 +120,7 @@ def map_results_to_model(results):
                 deathDate=r.get('deathDate', {}).get('value'),
                 deathPlace=r.get('deathPlace', {}).get('value'),
                 nationality=r.get('nationality', {}).get('value'),
+                role=r.get('role', {}).get('value'),
                 classificationName=r.get('classificationName', {}).get('value')
             )
             artworks.append(artwork)

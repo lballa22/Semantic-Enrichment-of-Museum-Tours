@@ -21,6 +21,7 @@ class ArtworkSearchResult(BaseModel):
     deathDate: Optional[str] = None
     deathPlace: Optional[str] = None
     nationality: Optional[str] = None
+    role: Optional[str] = None
     classificationName: Optional[str] = None
 
 class SearchResponse(BaseModel):
