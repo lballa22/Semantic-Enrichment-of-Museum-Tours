@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Semantic Enrichment of Museum Tours with Linked Data 
+=======
+# Semantic Enrichment of Museum Tours
+>>>>>>> 34fb7f5 (updated readme)
 
 
 <p align="center">
@@ -7,7 +11,11 @@
 </p>
 
 ## Overview
+<<<<<<< HEAD
 This document presents the Semantic Enrichment of Museum Tours with Linked Data project, an initiative leveraging Linked Data and Semantic Web technologies to enhance museum tours. The project involves mapping complex database data to Linked Data through RDF mapping and OWL ontologies, using datasets from the Carnegie Museum of Art and Museum of Modern Art.
+=======
+This document presents the Semantic Enrichment of Museum Tour project, an initiative leveraging Linked Data and Semantic Web technologies to enhance museum tours. The project involves mapping complex database data to Linked Data through RDF mapping and OWL ontologies, using datasets from the Smithsonian American Art Museum and Museum Of Modern Art.
+>>>>>>> 34fb7f5 (updated readme)
 
 ## Key Features
 - **Linked Data Utilization**: Incorporating Linked Open Data (LOD) for improved data structure and accessibility.
@@ -50,5 +58,10 @@ The project addresses the challenge of accessing reliable and consistent data in
 - Scaling the application to cater to a larger user base.
 
 ## Conclusion
+<<<<<<< HEAD
 The Semantic Enrichment of Museum Tours with Linked Data project effectively uses digital technology and Semantic Web tools to enhance the museum experience by providing detailed, linked information about artworks.
 
+=======
+The Semantic Enrichment of Museum Tour project effectively uses digital technology and Semantic Web tools to enhance the museum experience by providing detailed, linked information about artworks.
+>>>>>>> ae2ad25 (Added backend logic to the code)
+>>>>>>> 34fb7f5 (updated readme)
